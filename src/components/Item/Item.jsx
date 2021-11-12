@@ -5,7 +5,7 @@ const Item = ({name, price, imgUrl}) => {
     const styles = {
         display:"flex",
         flexDirection:"column",
-        width: 320,
+        width: 330,
         height: 500,
         alignItems: "center",
         margin: 20
