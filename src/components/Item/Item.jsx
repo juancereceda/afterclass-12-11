@@ -1,4 +1,5 @@
-import "./Item.css"
+import "./Item.css";
+import {capitalize} from '../../utils/funciones'
 
 const Item = ({name, price, imgUrl}) => {
 
@@ -13,7 +14,7 @@ const Item = ({name, price, imgUrl}) => {
     
     return(
         <div className={name} style={styles}>
-            <h1>{name}</h1>
+            <h1>{capitalize(name)}</h1>
             <h1>Precio: {price}</h1>
             <img src={imgUrl} style={{width: 300, height: 300}} alt=""/>
         </div>
